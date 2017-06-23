@@ -2,31 +2,91 @@
 <html>
 <head>
     <title>Favour Ori</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/mainStyle.css">
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script>
+        function loadPage() {
+            $("#profile").hide();
+        }
+
+        function loadProfile() {
+            $("#profile").show();
+            $("#landing").fadeOut(180);
+            $("#bar").hide(180);
+
+
+        }
+
+
+        function showProfile() {
+
+            document.getElementById("profile").style.display = "block";
+            document.getElementById("landing").style.display = "none";
+            document.getElementById("bar").style.display = "none";
+        }
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
 
 
 </head>
-<body class="bg">
 
 
-<div style="margin-left: 12%; margin-bottom: 30px">
+<div style="background-color: cornflowerblue; height: 3px; width: 100%; " id="bar">
 
-  <img src="images/face.png" style=" margin-top: 10%; width: 230px"/>
+</div>
+<body class="bg" onload="loadPage()">
 
+<div class="bodyDiv" id="landing">
+    <div class="avatar">
+
+        <img src="images/face.png" style=" margin-top: 10%; width: 230px"/>
+
+
+    </div>
+
+
+    <div style="border-left-width: 3px; border-left-color: cornflowerblue; border-left-style: solid; padding-left: 15px; ">
+        <div style=""><span style="font-size: 18px; font-family: myfont"> Hello, I'm <a href="#">Favour Ori.</a></span>
+        </div>
+        <div style=" margin-top: 10px; font-family: myfont; font-size: 13px;  "><span>Software Engineer <b> |</b> UX Developer.</span>
+        </div>
+    </div>
+
+    <div style=" margin-top: 20px; margin-bottom: 10px;">
+        <a href="#modal-full" uk-toggle style="text-decoration: none">
+            <button class="uk-button   uk-button-primary     myfont ori-primary-button"
+                    style="letter-spacing: 1px; ; margin-bottom: 10px"> About me
+            </button>
+        </a>
+            &nbsp;
+
+
+
+
+
+        <a href="works.html">
+            <button class="uk-button uk-button-danger myfont ori-primary-button"
+                    style="letter-spacing: 1px; ; margin-bottom: 10px"> VIEW PORTFOLIO
+            </button>
+        </a>
+
+
+    </div>
 
 </div>
 
 
+<div id="profile" style="height: 100vh; background-color:#ebebeb; color: white;  " onload="loadPage()">
 
 
-<div style="margin-left: 12%"><span style="border-left-width: 3px; border-left-color: cornflowerblue; border-left-style: solid; padding-left: 15px; font-size: 20px; font-family: myfont" > Hello! I'm Favor Ori.</span></div>
-<div style="margin-left: 12%; margin-top: 10px; font-family: myfont "><span>Web Developer <b>||</b> Software Developer <b>||</b> Ui Designer</span></div>
-<div style="margin-left: 12%; margin-top: 20px; margin-bottom: 10px;">     <a href="#modal-full" class="uk-button uk-button-primary ori-primary-button" uk-toggle style=" margin-bottom: 10px"> ABOUT ME</a> &nbsp;&nbsp;   <a href="portfolio.html"><button class="uk-button uk-button-danger myfont ori-primary-button" style="letter-spacing: 1px; ; margin-bottom: 10px"> VIEW PORTFOLIO</button> </a>   </div>
+</div>
 
 
 <!---About me starts from here---->
@@ -34,35 +94,53 @@
 <div id="modal-full" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
 
-        <button class="uk-modal-close-full" type="button" uk-close> <span style="padding-bottom: 15px; margin-right: 10px">CLOSE </span></spam></button>
+        <button class="uk-modal-close-full" type="button" uk-close><span
+                style="padding-bottom: 15px; margin-right: 10px">CLOSE </span></spam></button>
 
 
-       <div style="height: 100vh">
-                <center> 
-                <div> <img src="images/about.png" class="aboutPic"></div>
-                    <div class="aboutText"> Hei, My name is Favor Ori, and I'm currently an UG Computer Science student at Southern Arkansas University, Magnolia, United States.
+        <div style="height: 100vh">
+            <center>
+                <div><img src="images/about.png" class="aboutPic"></div>
+                <div class="aboutText">  Hello!  My name is Favor Ori, and I'm currently an UG Computer Science student at Southern Arkansas University, Magnolia, United States.
+                I do with code what painters do with paint & brushes.
+                </div>
+<br>
+                <div class="aboutText">  Hello!  My name is Favor Ori, and I'm currently an UG Computer Science student at Southern Arkansas University, Magnolia, United States.
                     I do with code what painters do with paint & brushes.
-                    </div>
-
-                    <div class="socialAccounts"><a href="https://github.com/orifavour" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
-                        <a href="https://www.linkedin.com/in/favourori/" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: linkedin"></a>
-                        <a href="https://www.facebook.com/favour.ori.5" class="uk-icon-button" uk-icon="icon: facebook"></a></div>
-
-                  <span uk-icon="icon: download" style="margin-top: 25px"> </span>
-                   <div class="resume"><a href="resume.html"> DOWNLOAD RESUME</a> </div>
-                </center>
+                </div>
 
 
 
-            </div>
+
+
+
+
+
+                <div class="socialAccounts"><a href="https://github.com/orifavour"
+                                               class="uk-icon-button uk-margin-small-right"
+                                               uk-icon="icon: github"></a>
+                    <a href="https://www.linkedin.com/in/favourori/" class="uk-icon-button  uk-margin-small-right"
+                       uk-icon="icon: linkedin"></a>
+                    <a href="https://www.facebook.com/favour.ori.5" class="uk-icon-button"
+                       uk-icon="icon: facebook"></a></div>
+
+                <span uk-icon="icon: download" style="margin-top: 25px"> </span>
+                <div class="resume"><a href="resume.html"> DOWNLOAD RESUME</a></div>
+            </center>
+
         </div>
+
+
     </div>
+
+
+</div>
+</center>
 </div>
 
 
-
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
 <script src="js/myjs.js"></script>

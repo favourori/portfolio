@@ -1,66 +1,171 @@
 .bg {
-  background-image: url(../images/background.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover; }
+    background-image: url(../images/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.bodyDiv {
+    margin-left: 160px;
+    height: 99vh;
+
+}
+
+.portButton {
+    border: solid 1px cornflowerblue;
+    padding: 10px 40px;
+    text-decoration: none;
+
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: myfont; }
+    font-family: myfont;
+
+}
 
 @font-face {
-  font-family: myfont;
-  src: url("../fonts/Poppins-Light.ttf"); }
+    font-family: myfont;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
 .ori-primary-button {
-  border-radius: 3px 3px; }
+    border-radius: 3px 3px;
+}
+
+.avatar {
+
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 0) and (max-width: 1100px) {
+    .avatar {
+        margin-top: 80px;
+    }
+
+    .bg {
+        height: 100%;
+    }
+}
 
 .lineUnderTitle {
-  height: 2px;
-  width: 60px;
-  background: cadetblue;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 27px; }
-
-.mainDiv {
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 15px; }
+    height: 2px;
+    width: 60px;
+    background: cadetblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 27px;
+}
 
 .divTitle {
-  padding-left: 10px;
-  font-size: 20px; }
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+    .bodyDiv {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .lineUnderTitle {
+        height: 2px;
+        width: 60px;
+        background: cadetblue;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 27px;
+    }
+
+    .mainDiv {
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 15px;
+    }
+}
 
 .aboutPic {
-  width: 22%; }
+    width: 18%;
+}
 
 .aboutText {
-  font-family: myfont;
-  width: 40%; }
+
+    font-size: 12px;
+    width: 40%;
+    line-height: 20px;
+    text-align: justify
+}
 
 .socialAccounts {
-  margin-top: 25px; }
+    margin-top: 25px;
+}
 
 .resume {
-  font-family: myfont; }
+    font-family: myfont;
+}
 
 .backButton {
-  top: 2px;
-  right: 2px;
-  position: absolute; }
+    top: 2px;
+    right: 2px;
+    position: absolute;
+}
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+    .aboutPic {
+        width: 42%;
+        margin-top: 130px;
+    }
+
+    .aboutText {
+        font-family: myfont;
+
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .aboutPic {
+        width: 42%;
+        margin-top: 50px;
+    }
+
+    .aboutText {
+        font-family: myfont;
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+    .aboutPic {
+        width: 20%;
+        margin-top: 30px;
+    }
+
+    .aboutText {
+        font-family: myfont;
+        width: 40%;
+    }
+}
 
 .optionBox {
-  width: 40%;
-  height: 10%;
-  border: 2px solid cornflowerblue;
-  padding: 7px 7px; }
+    width: 40%;
+    height: 10%;
+    border: 2px solid cornflowerblue;
+    padding: 7px 7px;
+}
 
 .main {
-  margin-top: 40px; }
+    margin-top: 40px;
+}
 
 .button1, .button2 {
-  background: red;
-  width: 200px;
-  padding: 5px 20px;
-  border-radius: 15px 15px; }
+    background: red;
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 15px 15px;
+}
 
-/*# sourceMappingURL=mainStyle.css.map */
+.parentdiv {
+    padding-left: 60px;
+}

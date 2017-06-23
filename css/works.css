@@ -1,0 +1,33 @@
+
+.Div1{
+    padding: 140px 30px;
+}
+
+.tool{
+    border-color: #2C82C9;
+    padding: 1px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 11px;
+
+
+}
+
+.workCategory{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.workTitle{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 0) and (max-width: 700px){
+
+    .Div1{
+        padding: 50px 20px;
+    }
+}
