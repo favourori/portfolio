@@ -11,82 +11,142 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-    <script>
-        function loadPage() {
-            $("#profile").hide();
-        }
-
-        function loadProfile() {
-            $("#profile").show();
-            $("#landing").fadeOut(180);
-            $("#bar").hide(180);
 
 
-        }
-
-
-        function showProfile() {
-
-            document.getElementById("profile").style.display = "block";
-            document.getElementById("landing").style.display = "none";
-            document.getElementById("bar").style.display = "none";
-        }
-    </script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/works.css">
 
 
 </head>
 
 
-<div style="background-color: cornflowerblue; height: 3px; width: 100%; " id="bar">
+<div style="background-color: cornflowerblue; height: 6px; width: 100%" id="bar">
 
 </div>
-<body class="bg" onload="loadPage()">
-
-<div class="bodyDiv" id="landing">
-    <div class="avatar">
-
-        <img src="images/face.png" style=" margin-top: 10%; width: 230px"/>
 
 
-    </div>
+<body class="bg" onload="loadPage()" >
+
+<div style="margin: 2px 5px" class ="desc">
+    <CENTER><div style="font-size: 73px; font-weight: 200; padding-top: 80px"> <span style="color: cornflowerblue">FAVOUR</span> ORI.</div>
+
+       <DIV   STYLE="font-size: 22px; padding-top: 30px;letter-spacing: 2px;font-weight: 100">Software Engineer | UX Developer </DIV>
+<div style="max-width: 820px">
+<ul>
+  <li><div  class ="bio" style="margin-top: 30px; font-weight: 100; font-size: 15px; line-height: 27px; color: darkgrey; height: 50px"> Sophomore Computer Science student at Southern Arkansas University who is passionate about driving innovations through his love for technology &nbsp; <a href="#modal-full" uk-toggle >Read More</a></div></li>
+</ul>
+</div>
+       <div style="margin-top: 80px;font-weight: 100; font-size: 15px; line-height: 25px;  height: auto;color: darkgrey"><span style="color: cornflowerblue; font-size: 30px; letter-spacing: 4px">RECENT PROJECTS</span></div>
+   </CENTER>
 
 
-    <div style="border-left-width: 3px; border-left-color: cornflowerblue; border-left-style: solid; padding-left: 15px; ">
-        <div style=""><span style="font-size: 18px; font-family: myfont"> Hello, I'm <a href="#">Favour Ori.</a></span>
+
+
+</div>
+<div style="height: auto; max-width: 100%; background-color: #F5F5F5; margin-top: 20px; padding-top: 20px">
+
+    <!--start projects here-->
+
+
+
+    <div class="Div1" style="padding: 10px 30px; line-height: 20px">
+
+
+        <div class="uk-child-width-expand@s uk-text-center uk-grid-match uk-grid-medium" uk-grid>
+
+
+            <!---work2-->
+
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                    <a href="projectBethel.html">
+                        <div><img src="images/portBethel.png" width="80"></div>
+                    </a>
+                    <div class="workTitle">BETHEL CHURCH, MAGNOLIA</div>
+
+                    <div class="workCategory">Mobile & Desktop App Development</div>
+                    <div style="margin-top: 10px"><span class="tool">Java</span> <span class="tool">JavaFx</span> <span
+                            class="tool">Swift</span> <span class="tool">PHP</span> <span class="tool">MySQL </span></div>
+
+
+                </div>
+            </div>
+            <!---work3-->
+            <div>
+                <a href="projectSau.html">
+                    <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+
+                        <div><img src="images/portSau.png" width="80"> </div> </a>
+
+                <div class="workTitle">SAU MATHS & COMPUTER SCIENCE CLUB</div>
+                <div class="workCategory">Web Design & Development</div>
+                <div style="margin-top: 10px"><span class="tool">HTML5</span> <span class="tool">CSS3</span> <span
+                        class="tool">JQuery</span> <span class="tool">PHP</span></div>
+
+
+            </div>
+
         </div>
-        <div style=" margin-top: 10px; font-family: myfont; font-size: 13px;  "><span>Software Engineer <b> |</b> UX Developer.</span>
+    </div>
+
+
+    <!--another row-->
+
+
+</div>
+
+<!--Modal one for project Bethel-->
+
+
+<div id="modal-bethel" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+
+        <div style="height: 100vh;">
+
+            <div style="width: 100%; height: 550px; background-color: #2C82C9"></div>
+
+            <div style="width: 100%; height: 600px; background-color: #ecf0f1">
+
+                <center>
+                    <div style="padding-top: 20px; font-size: 30px">BETHEL CHURCH, MAGNOLIA</div>
+                    <div>Mobile & Desktop App Development </div>
+
+                </center>
+
+
+            </div>
+
+            <div style="width: 100%; height: 550px; background-color: white"></div>
+
+
         </div>
-    </div>
-
-    <div style=" margin-top: 20px; margin-bottom: 10px;">
-        <a href="#modal-full" uk-toggle style="text-decoration: none">
-            <button class="uk-button   uk-button-primary     myfont ori-primary-button"
-                    style="letter-spacing: 1px; ; margin-bottom: 10px"> About me
-            </button>
-        </a>
-            &nbsp;
-
-
-
-
-
-        <a href="works.html">
-            <button class="uk-button uk-button-danger myfont ori-primary-button"
-                    style="letter-spacing: 1px; ; margin-bottom: 10px"> VIEW PORTFOLIO
-            </button>
-        </a>
 
 
     </div>
+</div>
+
+
+<center><div style="margin-top: 50px;  padding-bottom: 50px">  <a href="works.html" style="text-decoration: none"><span  class ="loadMore"      style="  -webkit-transition-duration: 0.7s; ;border-radius: 5px; border: solid 1px cornflowerblue; padding: 8px 100px; font-size: 12px; letter-spacing: 3px; transition-duration: 0.7s ;  text-decoration: none">VIEW PORTFOLIO</span></a></div></center>
+<!--end it here-->
 
 </div>
 
 
-<div id="profile" style="height: 100vh; background-color:#ebebeb; color: white;  " onload="loadPage()">
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!---About me starts from here---->

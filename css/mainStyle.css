@@ -1,5 +1,20 @@
+
+.desc{
+
+}
+
+.bullet{
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    border-radius: 90px;
+    color:black;
+}
+
+
+
 .bg {
-    background-image: url(../images/background.jpg);
+    /*background-image: url(../images/background.jpg);*/
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -38,6 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 0) and (max-width: 1100px) {
+
+
+    .desc{
+
+    }
+
     .avatar {
         margin-top: 80px;
     }
@@ -62,6 +83,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 0) and (max-width: 700px) {
+    .bio{
+        text-align: justify;
+    }
+
+    .desc{
+        margin: 3px 10px;
+
+    }
+
+
     .bodyDiv {
         margin-left: 40px;
         margin-right: 40px;
